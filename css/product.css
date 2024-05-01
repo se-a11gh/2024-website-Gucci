@@ -1,0 +1,474 @@
+.header{
+    background-color: black;
+}
+.wrapp_product_addition{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.icon_care{
+    display: flex;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}.icon_care img{
+    width: 25px;
+    margin-right: 25px;
+}
+.blProd_h3{
+    width: 100%;
+}
+.wrap_tovar_templ{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+.slider_tovFoto_pokaz{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    margin-top: 100px;
+    height: auto;
+}
+.slider_line2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bl_slideFoto{
+    width: 50%;
+    height: auto;
+}
+.bl_slideFoto img{
+    width: 100%;
+    height: 635px;
+    object-fit: cover;
+}
+.btn_prod_group {
+    display: none;
+}
+.block_tov_info{
+    position: sticky;
+    top: 65px;
+    width: 39%;
+    height: 530px;
+}
+.blProd_h1, .blProd_h2, .blProd_h3{
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(171, 171, 171);
+}
+.tov_info_content{
+    flex-direction: column;
+    height: 460px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.tovar_name p{
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+    box-sizing: border-box;
+}
+.tovar_proper__1{
+    width: 70%;
+}.tovar_proper__1 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.tovar_proper__2{
+    width: 110px;
+}
+.tovar_proper ul{
+   margin: 10px 0 10px;
+}.tovar_proper ul li{
+   line-height: 25px;
+}
+.tov_color{
+    display: flex;
+    justify-content: space-around;
+    width: 75px;
+    margin-left: auto;
+}
+.tov_color button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.color_1{background-color:#F5D7D7;}
+.color_2{background-color:#CEE4A4;}
+.color_3{background-color:#5E5E5E;}
+
+.aside_basket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100%;
+    transition: right 0.7s, top 0.4s;
+    background: rgb(1, 1, 1, 0.7);
+    z-index: 200;
+}
+.move-right{
+    right: 0px;
+}
+
+.aside_basket img{
+    position: relative;
+    top: -4%;
+    left: 94%;
+    width: 23px;
+    cursor: pointer;
+}
+.aside_basket__content{
+    width: 350px;
+    height: 300px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 30px;
+}
+.aside_basket__content p {
+    text-align: center;
+    margin: 30px 0;
+}
+.btn_aside_basket a{
+    padding: 10px;
+    font-size: 17px;
+}
+.btnCloseAdress{
+    fill: black;
+    transform: rotate(90deg);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.filter_list {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.adrList_name {
+    display: block;
+}.adrList_name img{
+    width: 17px;
+}
+.filter_list ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;    
+    margin-top: -8px;
+}.filter_list ul li{
+    margin: 0;
+    cursor: pointer;
+    line-height: 15px;
+    font-size: 14px;
+}
+.distr_list {
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    height: 0.002%;
+    overflow: hidden;
+    transition: all 0.8s;
+    z-index: 1;
+    background-color: white;
+}.distr_list li {
+   width: 100%;
+   padding: 5px;
+   box-sizing: border-box;
+}.distr_list li:hover {
+    background-color: rgb(164, 164, 164);
+    color: white;
+}
+.distr_list li span {
+   display: block;
+   padding: 2px;
+   box-sizing: border-box;
+   cursor: pointer;
+}
+.adrList_name {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(197, 197, 197);
+    z-index: 2;
+}.adrList_name input{
+    width: 100%;
+    height: 27px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.tovar_price{
+    font-size: calc(var(--index) * 2);
+    font-weight: bold;
+}
+.tovar_buy{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px 10px 2px;
+    border-top: 1px solid rgb(222, 222, 222);
+    box-sizing: border-box;
+}
+.btn_buy{
+    width: 100%;
+    margin-right: 5px;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: background 1s;
+    background-color: var(--btnColr);
+    cursor: pointer;
+}.btn_buy:hover {
+    background-color: var(--btnColrHvr);
+}
+.btn_favort{
+   padding: 13px 10px 0;
+   box-sizing: border-box;
+   border: 1px solid rgb(222, 222, 222);
+   border-radius: 3px;
+}
+.btn_buy a{
+    padding: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* Адаптив */
+@media(max-width:1100px){ 
+.btn_buy a{
+    font-size: 17px;
+}
+.btn_favort {
+    padding: 10px 10px 0;
+}
+}
+
+@media(max-width:950px){
+.bl_slideFoto {
+    width: 100%;
+}
+.slider_tovFoto_pokaz, .block_tov_info {
+    width: 50%;
+}
+.aside_basket {
+    width: 350px;
+}
+.aside_basket__content {
+    width: 290px;
+    font-size: 26px;
+}
+.btn_aside_basket a {
+    font-size: 16px;
+}
+.aside_basket img{
+    width: 20px;
+}
+}
+
+@media (max-width:800px) {
+.slider_tovFoto_pokaz {
+    margin-top: 70px;
+}
+}
+
+@media(max-width:750px){
+.tov_color button {
+    width: 20px;
+    height: 20px;
+}
+.tov_color {
+    width: 60px;
+}
+.adrList_name input {
+    height: 22px;
+    padding: 8px;
+    font-size: 14px;
+}
+.adrList_name {
+    height: 25px;
+    padding-right: 7px;
+}
+.btnCloseAdress {
+    width: 14px;
+    height: 14px;
+}
+.filter_list ul {
+    margin-top: -14px;
+}
+.block_tov_info {
+    width: 57%;
+}
+}
+
+@media(max-width:700px){ 
+.slider_line2{
+    display: flex;
+    position: relative;
+    left: 0%;
+    width: 299.9%;
+    height: 500px;
+    transition: left 1s;
+}
+.btn_prod_group {
+    display: flex;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.btn_next_prod, .btn_prev_prod{
+    width:25px;
+}
+.btn_prev_prod{
+    transform: rotate(-180deg);
+}
+.tovar_name p {
+    font-size: 15px;
+}
+.tovar_buy p {
+    font-size: calc(var(--index) * 2.1);
+    padding: 5px;
+}
+.tov_info_content {
+    height: 375px;
+}
+.wrap_tovar_templ {
+    flex-direction: column;
+}
+.block_tov_info {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 430px;
+}
+.btn_favort {
+    padding: 13px 10px 0;
+}
+.slider_tovFoto_pokaz{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.bl_slideFoto {
+    width: 17%;
+    height: auto;
+}.bl_slideFoto img {
+    width: 100%;
+    height: auto;
+}
+.slider_line2 {
+    height: auto;
+}
+.aside_basket {
+    width: 100%;
+    height: 28%;
+    right: 0;
+    top: -230px;
+}
+.move-top{
+    top: 0px;
+}
+
+.aside_basket img {
+    top: 0%;
+    left: 97%;
+    width: 18px;
+}
+.aside_basket__content {
+    height: 160px;
+    padding: 10px 25px;
+    font-size: 21px;
+}.aside_basket__content p {
+    margin: 12px 0;
+}
+}
+
+
+
+@media(max-width:500px){
+.tovar_name p {
+    font-size: 14px;
+}
+.blProd_h1, .blProd_h2, .blProd_h3 {
+    font-size: 18px;
+}
+.tovar_proper__1 p, .product_addition__care p {
+    font-size: 14px;
+}
+.icon_care {
+    padding: 12px 0 12px 0;
+}.icon_care img {
+    width: 20px;
+    margin-right: 15px;
+}
+.aside_basket__content p {
+    margin: 8px 0;
+}
+.aside_basket__content {
+    height: 115px;
+    padding: 8px 17px;
+    font-size: 18px;
+}
+.btn_aside_basket a {
+    font-size: 15px;
+    padding: 8px;
+}
+.aside_basket {
+    height: 19%;
+    background: rgb(1, 1, 1, 0.8);
+}
+.aside_basket img {
+    width: 17px;
+}
+}
+
+
+
+
+/* Добавочный стиль хлеб. крошек */
+.bread_crums{
+    position: absolute;
+    top: 95px;
+    background: rgb(1, 1, 1, 0.4);
+}
+.fixed-bread_crums{
+    position: fixed;
+    top: 0px;
+    background: rgb(1, 1, 1, 0.6);
+}
+@media (max-width:800px) {
+.bread_crums {
+    top: 70px;
+}
+.fixed-bread_crums{
+    top: 0px;
+}
+}

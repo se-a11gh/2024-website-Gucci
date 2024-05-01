@@ -1,0 +1,223 @@
+.main_shop{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(251, 231, 231);
+    padding-bottom: 20px;
+}
+.foto_collage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    perspective: 1000px;
+    padding: 10px;
+    box-sizing: border-box;
+}.foto_collage img{
+    position: relative;
+    width: 425px;
+    height: 600px;
+    transition: transform 0.6s, width 0.6s;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: 1px 1px 10px pink;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.foto_collage img:nth-child(1){
+    transform: rotateY(-24deg);
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: animShop3;
+}
+.foto_collage img:nth-child(2){
+    transform: rotateY(-40deg);
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: animShop2;
+}
+.foto_collage__text{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    background: rgba(255, 154, 154, 0.5);
+    width: 500px;
+    z-index: 2;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: animShop1;
+}
+@keyframes animShop1{
+    100%{top: 65%;}
+}
+@keyframes animShop3{
+    100%{transform: rotateY(0deg);}
+}
+@keyframes animShop2{
+    100%{transform: rotateY(-15deg);}
+}
+.foto_collage__text p{
+    margin-top: 20px;
+}
+.Block_products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.block_pagination{
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+    margin-bottom: 40px;
+}.block_pagination div{
+    width: 220px;
+}
+.btnpagin_next a, .btnpagin_prev a{
+    padding: 10px;
+    border-radius: 2px;
+    transition: background 1s;
+    font-size: 18px;
+}
+.btnpagin_next a{
+    color: white;
+}
+.btnpagin_prev a{
+    border: 1px solid;
+    background-color: white;
+    color: black;
+}
+.btnpagin_next a:hover, .btnpagin_prev a:hover{
+    color: white;
+    background-color: var(--btnColrHvr);
+}
+
+
+
+/* Адаптив */
+@media(max-width:950px){
+.foto_collage img {
+    width: 370px;
+    height: 550px;
+}
+}
+
+@media (max-width:800px) {
+.main_shop {
+    height: 540px;
+}  
+.foto_collage img {
+    width: 300px;
+    height: auto;
+}
+.foto_collage__text h1{
+    font-size: 25px;
+}
+}
+
+@media(max-width:700px){
+.block_pagination {
+    width: 100%;
+}
+.btnpagin_next a, .btnpagin_prev a {
+    padding: 8px;
+    font-size: 17px;
+}
+}
+
+@media(max-width:650px){  
+.main_shop {
+    align-items: flex-end;
+    height: 665px;
+    max-height: 660px;
+    padding: 0;
+}
+.foto_collage {
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 600px;
+}    
+.foto_collage__text {
+    position: static;
+    transform: translate(0, 0);
+    background: rgba(255, 154, 154, 0);
+    padding: 15px;        
+}
+.foto_collage__text h1 {
+    font-size: 23px;
+}
+.foto_collage__text p {
+    margin-top: 10px;
+}
+.foto_collage img:last-child, .foto_collage img:first-child {
+    transform: rotateY(0deg);
+}
+@keyframes animShop3{
+    100%{transform: rotateY(0deg);}
+}
+@keyframes animShop2{
+    100%{transform: rotateY(0deg);}
+}
+.foto_collage img {
+    width: 50%;
+}
+}
+
+
+@media(max-width:600px){
+.foto_collage {
+    align-content: center;
+}
+}
+
+
+@media(max-width:550px){
+.foto_collage__text {
+    width: 98%;
+}
+.main_shop {
+    max-height: 610px;
+}
+.foto_collage {
+    height: 530px;
+}
+}
+
+@media(max-width:500px){
+.block_pagination button {
+    width: 175px;
+}
+.btnpagin_next a, .btnpagin_prev a {
+    font-size: 15px;
+}
+.block_pagination div{
+    width: 45%;
+}
+}
+
+@media(max-width:450px){
+.main_shop {
+    max-height: 525px;
+}
+.foto_collage {
+    height: 445px;
+}
+.foto_collage__text h1 {
+    font-size: 20px;
+}
+.foto_collage__text p {
+    font-size: 15px;
+}
+.block_pagination button {
+    width: 150px;
+}
+}

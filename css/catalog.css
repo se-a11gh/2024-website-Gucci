@@ -1,0 +1,102 @@
+.wrap_category_men {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 90px 0 10px 0;
+}
+.foto_categ > div, .foto_categ{
+    width: 43%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-name: anim1;
+}
+.foto_categ{
+    margin-top: 10px;
+}
+.foto_categ > div{
+    width: 100%;
+    height: 100%;
+    animation-name: anim2;
+}
+@keyframes anim1{
+    100%{width: 48%;}
+}
+@keyframes anim2{
+    100%{width: 100%;}
+}
+
+.foto_categ__1{ background-image: url('../media/tov_catg1.avif');}
+.foto_categ__2{ background-image: url('../media/tov_catg2.avif');}
+.foto_categ__3 > div{ background-image: url('../media/tov_catg3.avif'); display: none;}
+.foto_categ__4 > div{ background-image: url('../media/tov_catg4.avif'); display: none; }
+.foto_categ__5 > div{ background-image: url('../media/tov_catg5.avif'); display: none; }
+.foto_categ__6 > div{ background-image: url('../media/tov_catg6.avif'); display: none;}
+.actv > div{display: block;}
+.foto_categ_fon{
+    width: 100%;
+    height: 650px;
+    background:rgba(1, 1, 1, 0);
+    cursor: pointer;
+    transition: background 0.8s;
+}
+.foto_categ_fon:hover{
+    background:rgba(1, 1, 1, 0.6);
+}
+.foto_categ_fon a{
+   display: block;
+   height: 100%;
+}
+.foto_categ_text{
+    position: relative;
+    top: 65%;
+    left: 10%;
+    font-size: calc(var(--index) * 2.4);
+    font-weight: bold;
+    color: white;
+    width: 85%;
+}.foto_categ_text p {
+    width: 100%;
+}
+.foto_categ_text p:last-child {
+    display: flex;
+}
+.foto_categ_text p span{
+    display: block;
+   font-size: 16px;
+   padding: 10px 10px 10px 0;
+   box-sizing: border-box;
+}
+.foto_categ_text svg{
+    width: 40px;
+    fill: white;
+    transform: rotate(-180deg);
+}
+
+
+
+/*Адаптив */
+@media(max-width:750px){
+    .foto_categ > div, .foto_categ{
+    width: 90%;
+}
+
+@keyframes anim1{
+    100%{width: 95%;}
+}
+}
+
+@media(max-width:500px){
+    .foto_categ > div, .foto_categ, .foto_categ_fon {
+    height: 500px;
+}
+.wrap_category_men {
+    margin: 70px 0 10px 0;
+}
+}

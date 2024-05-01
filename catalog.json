@@ -1,0 +1,97 @@
+[
+
+    {
+        "id": 1,
+        "sku": 10111,
+        "name": "Supreme silk dress №1",
+        "about": "Стильний та модний джемпер з ангори. Приталений силует, V-подібний виріз, об'ємні рукави. Підкреслить вашу жіночність та стане акцентом будь-якого образу.",
+        "price": 6255,
+        "mass_photo": ["DB/media/dress1/1101.avif",
+         "DB/media/dress1/1102.avif",
+         "DB/media/dress1/1103.avif",
+         "DB/media/dress1/1104.avif"]
+    },
+    {
+        "id": 2,
+        "sku": 10112,
+        "name": "Silk evening dress №2",
+        "about": "Легкий осінній костюм. Прямий крій, висока горловина, коси. Додасть елегантності та стане улюбленою річчю для дому та відпочинку.",
+        "price": 9900,
+        "mass_photo": ["DB/media/dress2/2201.avif",
+        "DB/media/dress2/2202.avif",
+        "DB/media/dress2/2203.avif",
+        "DB/media/dress2/2204.avif"]
+    },
+    {
+        "id": 3,
+        "sku": 10113,
+        "name": "Cotton shirt №3",
+        "about": "Сукня-костюм: Зроблено із кашеміру. Оверсайз крій, висока горловина, довжина міді. Стильний діловий стиль на всі випадки життя.",
+        "price": 5440,
+        "mass_photo": 
+        ["DB/media/dress3/3301.avif",
+        "DB/media/dress3/3302.avif",
+        "DB/media/dress3/3303.avif",
+        "DB/media/dress3/3304.avif"]
+    },
+    {
+        "id": 4,
+        "sku": 10114,
+        "name": "Silk maxi dress №4",
+        "about": "Коктейльна сукня: Елегантна сукня футляр з атласу. Приталений силует, V-подібний виріз, коротка довжина. Підкреслить вашу жіночність та стане ідеальним вибором для вечірнього заходу.",
+        "price": 3440,
+        "mass_photo": 
+        ["DB/media/dress4/girl1.avif",
+        "DB/media/dress4/girl2.avif",
+        "DB/media/dress4/girl3.avif",
+        "DB/media/dress4/non.avif"]
+         },
+    {
+        "id": 5,
+        "sku": 10115,
+        "name": "Mini dress №5",
+        "about": "Стильна та практична спідниця максі із льону. Прямий крій. Універсальний варіант як для вечірки, так і для повсякденного носіння.",
+        "price": 7600,
+        "mass_photo": 
+        ["DB/media/dress5/5501.avif",
+        "DB/media/dress5/5502.avif",
+        "DB/media/dress5/5503.avif",
+        "DB/media/dress5/5504.avif"]
+    },
+    {
+        "id": 6,
+        "sku": 10116,
+        "name": "Dress for women №6",
+        "about": "Затишна та модна кофта з флісу. Вільний крій, бавовна 100%. Зігріє вас у прохолодну погоду і стане незамінною річчю для повсякденного носіння.",
+        "price": 8700,
+        "mass_photo": 
+        ["DB/media/dress6/6601.avif",
+        "DB/media/dress6/6602.avif",
+        "DB/media/dress6/6603.avif",
+        "DB/media/dress6/6604.avif"] 
+    },
+    {
+        "id": 7,
+        "sku": 10117,
+        "name": "Silk Shorts №7",
+        "about": "Шовкова спідниця. Гарно струмує по фігурі, підкреслюючи її переваги. Завдяки своїй універсальності, вона легко поєднується з блузками, топами, жакетами та светрами.",
+        "price": 3800,
+        "mass_photo": 
+        ["DB/media/dress7/7701.avif",
+        "DB/media/dress7/d.avif",
+        "DB/media/dress7/7702.avif",
+        "DB/media/dress7/7703.avif"] 
+    },
+    {
+        "id": 8,
+        "sku": 10118,
+        "name": "Supreme Jackets №8",
+        "about": "Сорочка зі 100% бавовни. Прямий крій, комір, короткі рукави. Універсальна річ, яка підійде як для роботи, так і для повсякденного носіння. Можна носити як заправлену, так і навипуск.",
+        "price": 6400,
+        "mass_photo": 
+        ["DB/media/dress8/8801.avif",
+        "DB/media/dress8/8802.avif",
+        "DB/media/dress8/8803.avif",
+        "DB/media/dress8/8804.avif"] 
+    }
+  ]
