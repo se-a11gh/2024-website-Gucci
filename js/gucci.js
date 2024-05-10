@@ -6,16 +6,16 @@ let selColor = document.querySelectorAll(".selColor p");
 
 selColor.forEach((e)=>{
   e.addEventListener('click', (r)=>{
-    function abc(val, colr1, colr2, sroll){
+    function changeStyleBags(val, colr1, colr2, sroll){
       if(r.target.dataset.colr == val){
         Block1.style.background = colr1;
         circle.style.background = colr2;
         firstBag.style.marginLeft = sroll;
       }  
     }
-    abc('braun', "#ffe2cd", "#dd782f", "0%");
-    abc('blue', "#1595cc", "#a0f1ff", "-217%");
-    abc('green', "#ddffdd", "#7aff93", "-109%");
+    changeStyleBags('braun', "#ffe2cd", "#dd782f", "0%");
+    changeStyleBags('blue', "#1595cc", "#a0f1ff", "-217%");
+    changeStyleBags('green', "#ddffdd", "#7aff93", "-109%");
   });
 });
 

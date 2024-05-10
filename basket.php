@@ -167,20 +167,30 @@
 
 
 <div class="header__left header_area">
-<p>Language</p>
-<p>Support</p>
+<div class="filter_list filter_list__lang" data-list="langdown">
+<div class="listdown-name listdown-name__lang">
+<input id="distr1" type="text" value="" placeholder="Language">
+<svg class="btn-down btn-down__lang" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M1377 5110 c-142 -36 -255 -163 -273 -306 -7 -60 9 -151 38 -209 13-26 368 -388 1016 -1037 l997 -998 -997 -997 c-648 -650 -1003 -1012 -1016-1038 -92 -186 -15 -405 173 -492 51 -23 73 -28 145 -27 160 0 52 -96 1342 1192 778 777 1155 1160 1172 1191 39 73 53 158 37 234 -7 34 -24 83 -37 108 -17 31 -394 414 -1172 1191 -1022 1020 -1153 1147 -1200 1167 -61 25 -168 35-225 21z"/></g></svg>
+</div>
+<ul class="distr_list distr_list__lang">
+    <li><span data-val="eng">ENG</span></li>
+    <li><span data-val="uk">UK</span></li>
+</ul>
+</div>
+
+<p class="txt" data-txt="txt1">Support</p>
 <div class="btn_menu" aria-label="кнопка меню"><span></span></div>
 </div>
 
 <div class="header__center">
     <a href="index.php"><img class='img-logo' src="media/icons/logo.avif" alt="logo gucci"></a>
     <ul class="bl_list">
-        <li class="" data-menu="ml0">Gifts</li>
-        <li class="" data-menu="ml1">What’s new</li>
-        <li class="" data-menu="ml2">For men</li>
-        <li class="" data-menu="ml3">For women</li>
-        <li class="" data-menu="ml4">Kids</li>
-        <li class="" data-menu="ml5">Beauty</li>
+        <li class="txt" data-txt="txt4" data-menu="ml0">Gifts</li>
+        <li class="txt" data-txt="txt5" data-menu="ml1">What’s new?</li>
+        <li class="txt" data-txt="txt6" data-menu="ml2">For men</li>
+        <li class="txt" data-txt="txt7" data-menu="ml3">For women</li>
+        <li class="txt" data-txt="txt8" data-menu="ml4">Kids</li>
+        <li class="txt" data-txt="txt9" data-menu="ml5">Beauty</li>
     </ul>
 
     <div class="wrapp_menu_up">
@@ -327,42 +337,43 @@ if($data){
     </div>
     </section>
 
+
     <footer class="footer_g">
 <div class="foter_up">
 
     <div class="foter_up_block">
-    <div class="foter_up_block__1 listJS_Up"><p>MENU</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
+    <div class="foter_up_block__1 listJS_Up"><p class="txt" data-txt="txt57">MENU</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
         <ul class="foter_up_list wrapListJS">
-            <li>Gifts</li>
-            <li>What’s new</li>
-            <li>For men</li>
-            <li>For women</li>
-            <li>Beauty</li>
-            <li>Kids</li>
+            <li class="txt" data-txt="txt39">Gifts</li>
+            <li class="txt" data-txt="txt40">What’s new?</li>
+            <li class="txt" data-txt="txt41">For men</li>
+            <li class="txt" data-txt="txt42">For women</li>
+            <li class="txt" data-txt="txt43">Kids</li>
+            <li class="txt" data-txt="txt44">Beauty</li>
         </ul>
     </div>
 
     <div class="foter_up_block">
-        <div class="foter_up_block__1 listJS_Up"><p>THE COMPANY</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
+        <div class="foter_up_block__1 listJS_Up"><p class="txt" data-txt="txt45">THE COMPANY</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
         <ul class="foter_up_list wrapListJS">
-            <li>Exclusive visit</li>
-            <li>History of Gucci</li>
-            <li>Privacy & Cookie Policy</li>
-            <li>Careers</li>
+            <li class="txt" data-txt="txt46">History of Gucci</li>
+            <li class="txt" data-txt="txt47">Privacy & Cookie Policy</li>
+            <li class="txt" data-txt="txt48">Careers</li>
+            <li class="txt" data-txt="txt49">Exclusive visit</li>
         </ul>
     </div>
 
     <div class="foter_up_block">
-    <div class="foter_up_block__1 listJS_Up"><p>MAY WE HELP YOU?</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
+    <div class="foter_up_block__1 listJS_Up"><p  class="txt" data-txt="txt50">MAY WE HELP YOU?</p><svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"> <path d="M2348 5106 c-127 -35 -225 -149 -248 -287 -6 -41 -10 -382 -10 -926 l0 -863 -862 0 c-545 0 -886 -4 -927 -10 -120 -20 -215 -90 -268 -198 -28 -57 -28 -58 -28 -262 0 -204 0 -205 28 -262 53 -108 148 -178 268 -198 41 -6 382 -10 927 -10 l862 0 0 -862 c0 -545 4 -886 10 -927 20 -119 91 -216 200 -269 54 -27 57 -27 260 -27 204 0 205 0 262 28 108 53 178 148 198 268 6 41 10 382 10 927 l0 862 863 0 c544 0 885 4 926 10 122 20 214 89 268 198 28 57 28 58 28 262 0 204 0 205 -28 262 -54 109 -146 178 -268 198 -41 6 -382 10 -926 10 l-863 0 0 863 c0 544 -4 885 -10 926 -20 120 -90 215 -198 268 -55 27 -62 28 -242 30 -128 2 -199 -1 -232 -11z"/> </g> </svg></div>
         <ul class="foter_up_list wrapListJS">
-        <li>FAQs</li>
-        <li>Product care</li>
-        <li>Sitemap</li>
+        <li  class="txt" data-txt="txt51">FAQs</li>
+        <li  class="txt" data-txt="txt52">Product care</li>
+        <li  class="txt" data-txt="txt53">Sitemap</li>
         </ul>
     </div>
 
     <div class="foter_up_block__contants">
-        <p>CONTACT US</p>
+        <p class="txt" data-txt="txt54">CONTACT US</p>
         <ul class="foter_up_list__contcts">
             <li>+19144544545454 - USA</li>
             <li>+89144544545454 - Italy</li>
@@ -383,7 +394,7 @@ if($data){
         </ul>
 
         <div class="bl_select">
-            <label for="select_country">STORE LOCATOR</label><br>
+            <label for="select_country" class="txt" data-txt="txt55">STORE LOCATOR</label><br>
             <input placeholder="City, Region, Country" list="list_country" id="select_country" name="select_country">
             <datalist id="list_country">
                 <option value="Italy">
@@ -396,9 +407,8 @@ if($data){
     </div>
 </div>
 
-<div class="foter_down"><img src="media/icons/logo.avif" alt="logo footer"><p>All rights reserved. 2023</p></div>
+<div class="foter_down"><img src="media/icons/logo.avif" alt="logo footer"><p class="txt" data-txt="txt56">All rights reserved. 2024</p></div>
 </footer>
-
 
 </div><!-- END Wraper -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>

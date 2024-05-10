@@ -43,7 +43,7 @@ let l5 = document.querySelectorAll('.menu_sub_list5 .sub_list');
 let l6 = document.querySelectorAll('.menu_sub_list6 .sub_list');
 
 const linkData = new Promise((res, rej)=>{
-  fetch("http://localhost/Portfolio/Gen_next/GucciX/DB/linkcategory.json")
+  fetch("http://localhost/Portfolio/Gen3.0/GucciX/DB/linkcategory.json")
   .then(response => response.json())
   .then(data => res(data))
 }) 
@@ -145,6 +145,53 @@ listServise.forEach((i)=>{
 
 
 
+/* Фильтр(выпадающий список)*/
+let filter_list = document.querySelectorAll('.filter_list');
+if(filter_list){
+  filter_list.forEach((listDown) => {
+    const input = listDown.querySelector('.listdown-name input');
+    const list = listDown.querySelector('.distr_list');
+    const triggerElements = listDown.querySelectorAll('.distr_list li');
+    triggerElements.forEach((t) => {
+      t.addEventListener('click', () => {
+        input.value = t.textContent;
+        if(t.firstChild.dataset.val == 'eng'){ // Подгрузка англ. перевода сайта
+           lang_eng().then(
+            dataLang_eng =>{
+              let wrapp = document.documentElement.querySelectorAll('.txt');
+                dataLang_eng.forEach((e, u)=> {
+                  for(let listName of Object.entries(e)){
+                      if(listName[0] === wrapp[u].dataset.txt){
+                          wrapp[u].textContent = listName[1];
+                    }
+                  }
+                });  
+            }
+          );
+        }
+        if(t.firstChild.dataset.val == 'uk'){ // Подгрузка укр. перевода сайта
+          lang_uk().then(
+            dataLang_uk =>{
+              let wrapp = document.documentElement.querySelectorAll('.txt');
+                dataLang_uk.forEach((e, u)=> {
+                  for(let listName of Object.entries(e)){
+                      if(listName[0] === wrapp[u].dataset.txt){
+                          wrapp[u].textContent = listName[1];
+                    }
+                  }
+                });  
+            }
+          );
+        }
+        list.style.height = '0px';
+      });
+    });
+    const downButton = listDown.querySelector('.btn-down');
+    downButton.addEventListener('click', () => {
+      list.style.height = list.style.height === 'auto' ? '0px' : 'auto';
+    });
+  });
+}
 
 
 
@@ -155,8 +202,6 @@ e.addEventListener('click', () => {
   e.classList.toggle('icon_like-active')
 });
 });
-
-
 
 
 
@@ -186,10 +231,6 @@ function offset(el) {
   }   
   animOnScroll();
 }
-
-
-
-
 
 
 
@@ -245,12 +286,20 @@ img.forEach((e)=>{
 });
 
 
-
-
-
-
-async function abc(){
-  const response = await fetch('http://localhost/Portfolio/Gen_next/GucciX/catalog.json');
+async function productsBase(){
+  const response = await fetch('http://localhost/Portfolio/Gen3.0/GucciX/catalog.json');
   const data = await response.json();
   return data;
 }
+
+async function lang_uk(){
+  const response = await fetch('http://localhost/Portfolio/Gen3.0/GucciX/DB/lang/lang-uk.json');
+  const dataLang_uk = await response.json();
+  return dataLang_uk;
+}
+
+async function lang_eng(){
+  const response = await fetch('http://localhost/Portfolio/Gen3.0/GucciX/DB/lang/lang-eng.json');
+  const dataLang_eng = await response.json();
+  return dataLang_eng;
+} 

@@ -1,4 +1,4 @@
-abc().then( 
+productsBase().then( 
   data =>{ 
 /* Вывод карточек */
 const block = document.querySelector(".wrapp_Cards");
@@ -30,7 +30,7 @@ let price_prod = document.querySelectorAll('.price-card');
 let cardId1 = document.querySelectorAll('.cardId1[data-id1]');
 let cardId2 = document.querySelectorAll('.cardId2[data-id2]');
 
-abc().then( 
+productsBase().then( 
   data =>{   
     // Получение данных карточек
 const pathname = location.pathname;
